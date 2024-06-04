@@ -1470,3 +1470,8 @@ gap: calc((100% - 160px) / 4);
 }
 
 
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}

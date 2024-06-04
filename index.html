@@ -26,13 +26,13 @@
           >
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link current" href="./index.html">Studio</a>
+              <a class="header-nav-link current" href="#studio">Studio</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="./portfolio.html">Portfolio</a>
+              <a class="header-nav-link" href="#port">Portfolio</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Contacts</a>
+              <a class="header-nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -51,7 +51,7 @@
             </li>
           </ul>
         </address>
-        <button class="mobile-menu-open" type="button">
+        <button class="mobile-menu-open" type="button" id="my-button-open">
           <svg
             class="mobile-menu-open-icon"
             aria-label="mobile-menu-open"
@@ -63,9 +63,9 @@
           </svg>
         </button>
 
-         <div class="mobile-container is-hidden">
+         <div class="mobile-container" id="my-modal">
           <div class="mobile-menu">
-            <button class="mobile-menu-button" type="button">
+            <button class="mobile-menu-button" type="button" id="modal-button-close" >
               <svg
                 class="mobile-close-icon"
                 aria-label="mobile-menu-close"
@@ -77,17 +77,17 @@
             </button>
             <ul class="mobile-menu-list">
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link changecolor" href="./index.html"
+                <a class="mobile-menu-link changecolor" href="#studio"
                   >Studio</a
                 >
               </li>
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./portfolio.html"
+                <a class="mobile-menu-link" href="#port"
                   >Portfolio</a
                 >
               </li>
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="">Contacts</a>
+                <a class="mobile-menu-link" href="#contacts">Contacts</a>
               </li>
             </ul>
             <address class="mobile-address">
@@ -147,7 +147,7 @@
       <section class="hero hero-bg-image">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <button class="hero-button" type="button" id="my-down-button-open">
             Order Service
           </button>
         </div>
@@ -231,7 +231,7 @@
 
       
 
-      <section class="team">
+      <section id="studio" class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -492,7 +492,7 @@
       </section>
 
     
-      <section class="gallery">
+      <section id="port" class="gallery">
         <div class="container">
           <h2 class="gallery-title-global">Our Portfolio</h2>
 <ul class="gallery-list">
@@ -832,7 +832,7 @@
           </ul>
         </div>
 
-        <div class="footer-subscribe">
+        <div id="contacts" class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-form">
             <label class="footer-subscribe-label">
@@ -864,9 +864,9 @@
     </footer>
 
 
-<div class="container-modal-window is-hidden">
+<div class="container-modal-window" id="my-down-modal">
       <div class="modal-window">
-        <button type="button" class="modal-btn">
+        <button type="button" class="modal-btn"  id="modal-down-button-close">
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
@@ -948,6 +948,7 @@ Text input</textarea
         </form>
       </div>
     </div>
+   <script src="js/main.js"></script>
   </body>
 </html>
 
