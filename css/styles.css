@@ -1475,3 +1475,8 @@ gap: calc((100% - 160px) / 4);
   visibility: visible;
   pointer-events: auto;
 }
+
+.container-modal-window {
+  display: none;
+  /* Інші стилі для модального вікна */
+}
